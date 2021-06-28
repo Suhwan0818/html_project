@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       html {
+            background-color : rgb(255, 255, 255)
+        }
+
+        header {
+            background-color: rgb(211, 209, 209);
+            position : fixed;
+            top : 0;
+            left : 0;
+            right : 0;
+        }
+
+        div.banner {
+            height : 100px;
+            border-bottom : 1px solid rgb(185, 182, 182);
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction : row;
+        }
+
+        div.banner input {
+            width : 200px;
+            height : 20px;
+        }
+
+        #logo {
+            width : 80px;
+            height : 80px; 
+        }
+
+        div.item {
+            margin-right : 100px;
+        }
+
+        main {
+            margin-top : 150px;
+            display : flex;
+            justify-content : center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            display : flex;
+            flex-direction : column;
+        }
+
+        label {
+            margin-top : 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "banner">
+
+            <div class = "item">
+                <img src= "https://media.discordapp.net/attachments/813919906545401890/857515561240231936/6155a7c551295b98.png" id="logo">
+            </div>
+
+            <div class = "item">
+                <input type="text" placeholder="검색">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="">
+            <h1>프로필 변경</h1>
+            <label>아이디 : <input type="text"></label>
+            <label>이름 : <input type="text"></label>
+            <label>나이 : <input type="text"></label>
+            <label>학교 : <input type="text"></label>
+            <label>소개글 : <textarea id="" cols="30" rows="10"></textarea></label>
+            <label>이메일 : <input type="email"></label>
+            <label>전화번호 : <input type="tel"></label>
+            <label><button type="button" onclick="location.href='main_page.html' ">제출하기</button></label>
+        </form>
+    </main>
+</body>
+</html>
